@@ -1,36 +1,53 @@
 /* General Reset */
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html  , body{
+html, body {
     height: 100%;
     width: 100%;
+    background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+    color: #222;
 }
 
-h2{
+/* Heading */
+h2 {
     text-align: center;
-    margin: 10px;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-
-.container{
-    height: max-content;
+/* Container */
+.container {
     width: 95%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
-iframe{
-    height: max-content;
+/* Iframe Styling */
+iframe {
+    width: 300px;
+    min-height: 200px;
+    border: 2px solid #007bff;
+    border-radius: 12px;
     padding: 10px;
-    width: 280px;
-    border: 2px solid #333;
-    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
 }
